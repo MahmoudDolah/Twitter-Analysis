@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    {% if title %}
+    <title>{{ title }} - Twitter Analytics</title>
+    {% else %}
+    <title>Welcome to Twitter Analytics</title>
+    {% endif %}
+</head>
+
+<body>
+    {% if user %}
+    <h1>Hello searching for {{ user }}!</h1>
+    {% else %}
+    <form action="demo_form.asp">
+        Twitter Handle: <input type="text" name="twitter_handle" value=""><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+</body>
+
+</html>
