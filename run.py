@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!flask/bin/python
 
 from app import app
 app.run(debug=True)
